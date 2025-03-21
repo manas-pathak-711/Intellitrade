@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html" class="active">Marketplace</a></li>
+                <li><a href="upload.html">Upload IP</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="marketplace">
+            <h1>Explore Intellectual Properties</h1>
+            <div class="search-filter">
+                <input type="text" id="search" placeholder="Search IPs..." onkeyup="filterListings()">
+                <div class="filter-options">
+                    <label for="category">Category:</label>
+                    <select id="category" onchange="filterListings()">
+                        <option value="all">All</option>
+                        <option value="copyright">Copyright</option>
+                        <option value="patent">Patent</option>
+                        <option value="trademark">Trademark</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Marketplace Container Added -->
+            <div class="marketplace-container">
+                <div class="marketplace-item">
+                    <h3>Secured Quantum Communication</h3>
+                    <p class="item-type">(Patent)</p>
+                    <p class="price">$1200</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+                <div class="marketplace-item">
+                    <h3>AI-assisted Music Composition</h3>
+                    <p class="item-type">(Copyright)</p>
+                    <p class="price">$500</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+                <div class="marketplace-item">
+                    <h3>Streaming Rights Netflix/Youtube</h3>
+                    <p class="item-type">(Right)</p>
+                    <p class="price">$3000</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+                <div class="marketplace-item">
+                    <h3>Self-healing Nanocoating</h3>
+                    <p class="item-type">(Patent)</p>
+                    <p class="price">$1500</p>
+                    <button class="buy-button">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 IP Trading Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

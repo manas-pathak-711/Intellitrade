@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Intellectual Property</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="upload.html" class="active">Upload IP</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h1>Upload Your Intellectual Property</h1>
+            <div class="upload-container">
+                <form id="upload-form">
+                    <label for="ip-title">Title:</label>
+                    <input type="text" id="ip-title" name="ip-title" placeholder="Enter title..." required>
+
+                    <label for="ip-description">Description:</label>
+                    <textarea id="ip-description" name="ip-description" placeholder="Describe your intellectual property..." required></textarea>
+
+                    <label for="ip-category">Category:</label>
+                    <select id="ip-category" name="ip-category">
+                        <option value="copyright">Copyright</option>
+                        <option value="patent">Patent</option>
+                        <option value="trademark">Trademark</option>
+                    </select>
+
+                    <label for="ip-price">Price (ETH):</label>
+                    <input type="number" id="ip-price" name="ip-price" step="0.01" placeholder="Enter price in ETH" required>
+
+                    <label for="ip-file">Upload Supporting Documents:</label>
+                    <input type="file" id="ip-file" name="ip-file" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 IP Trading Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

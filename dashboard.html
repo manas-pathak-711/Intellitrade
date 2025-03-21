@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="upload.html">Upload IP</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="dashboard">
+            <h1>Welcome to Your Dashboard</h1>
+            <div class="profile">
+                <h2>User Profile</h2>
+                <p><strong>Username:</strong> <span id="user-name">John Doe</span></p>
+                <p><strong>Wallet Balance:</strong> <span id="wallet-balance">0.5 ETH</span></p>
+            </div>
+            
+            <div class="owned-ip">
+                <h2>Your Intellectual Properties</h2>
+                <ul id="ip-list">
+                    <!-- Dynamic IP Listings will be inserted here -->
+                </ul>
+            </div>
+            
+            <div class="transactions">
+                <h2>Transaction History</h2>
+                <ul id="transaction-list">
+                    <!-- Dynamic Transactions will be inserted here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 IP Trading Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>

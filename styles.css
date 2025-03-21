@@ -1,0 +1,444 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+/* Navigation */
+nav {
+    background-color: #1e1e1e;
+    padding: 15px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Sections */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.3);
+    width: 350px;
+    text-align: center;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    background: #222;
+    color: #f4f4f4;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffcc00;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.2);
+    width: 80%;
+    margin: 30px auto;
+}
+.features h2 {
+    color: #ffcc00;
+}
+.feature-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 15px 0;
+}
+.feature-item span {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #ffcc00;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.explore-button {
+    background-color: #6a0dad; /* Dark Purple */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.explore-button:hover {
+    background-color: #4b0082; /* Slightly darker on hover */
+}
+
+.subtext {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height */
+}
+
+.upload-box {
+    background-color: #1c1c1c; /* Dark background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 0, 0.5); /* Yellow glow */
+    width: 40%; /* Fixed width */
+    text-align: center;
+}
+
+.upload-box input,
+.upload-box textarea,
+.upload-box select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid yellow;
+    border-radius: 6px;
+    background: black;
+    color: white;
+}
+
+.upload-box input::placeholder,
+.upload-box textarea::placeholder {
+    color: #ccc;
+}
+
+.upload-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: yellow;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-box button:hover {
+    background-color: #ffcc00;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    padding: 15px;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: yellow;
+}
+
+/* Centering Upload Section */
+.upload-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.upload-container {
+    background-color: #1c1c1c;
+    width: 40%;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.6);
+}
+
+/* Form Inputs */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid yellow;
+    background: black;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* File Upload */
+input[type="file"] {
+    border: none;
+}
+
+/* Submit Button */
+button {
+    padding: 12px;
+    background-color: yellow;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer */
+/* Footer */
+
+/* Ensure body and html take up full height */
+/* Ensure body and html take up full height */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the main section take up remaining space */
+main {
+    flex: 1; /* Allows main content to expand and push the footer down */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    background-color: #1e1e1e;
+    padding: 15px;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav ul li a:hover, .active {
+    background-color: #ffcc00;
+    color: #121212;
+}
+
+/* Search & Filters */
+.search-filter {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.filter-options select {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Marketplace Grid */
+.marketplace-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* IP Card */
+.marketplace-item {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marketplace-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(255, 204, 0, 0.5);
+}
+
+/* Item Details */
+h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.item-type {
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Buy Button */
+.buy-button {
+    background-color: #ffcc00;
+    color: #121212;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #e6b800;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .marketplace-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    #search {
+        width: 90%;
+    }
+}
+
+/* Footer */
+
+
+
+/* Footer stays at the bottom without overlapping */
+footer {
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #1c1c1c;
+    width: 100%;
+    position: relative; /* Ensures it sits naturally below content */
+    flex-shrink: 0; /* Prevents it from growing */
+}
+
