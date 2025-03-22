@@ -24,6 +24,14 @@
         <section class="login-section">
             <h1>Login</h1>
             <form id="login-form">
+                <label for="role">Select Role:</label>
+                <select id="role" required>
+                    <option value="">-- Select Role --</option>
+                    <option value="inventor">Inventor</option>
+                    <option value="investor">Investor</option>
+                    <option value="buyer">Buyer</option>
+                </select>
+                
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
                 
